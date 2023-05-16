@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Dados</title>
+    <style>
+        body {
+            font: normal 2em Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let nome = window.prompt('Qual é o seu nome: ')
+        document.write(`Opa ${nome}! Seu nome possui ${nome.length} letras. </br>`)
+        document.write(`Sabia que o seu nome fica muito bonito todo em maiúsculas? Olha -> ${nome.toLocaleUpperCase()} </br>`)
+        document.write(`O interessante é que ele também fica bonito só em minúsculas, ò só -> ${nome.toLocaleLowerCase()}`)
+    </script>
+</body>
+</html>

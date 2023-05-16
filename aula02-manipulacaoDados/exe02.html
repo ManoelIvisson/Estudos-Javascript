@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Dados</title>
+</head>
+<body>
+    <h1 id="apresentacao">Olá </h1>
+
+    <script>
+        let nome = window.prompt("Digite seu nome: ") //declaração de variável que guarda a entrada do nome
+        let apresentacao = document.getElementById("apresentacao") //declaração de variável que recebe o elemento <H1>
+
+        window.alert('Opa ' + nome + '!!!') //Mostrando em um alert() a concatenação de uma variável com textos :)
+
+        apresentacao.innerHTML += nome + "!" //Adição do nome digitado ao elemento <H1>
+    </script>
+</body>
+</html>
