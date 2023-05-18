@@ -10,13 +10,18 @@
             font: normal 2em Arial;
         }
     </style>
-</head>
-<body>
+
     <script>
         let nome = window.prompt('Qual é o seu nome: ')
+        document.open()
         document.write(`Opa ${nome}! Seu nome possui ${nome.length} letras. </br>`)
         document.write(`Sabia que o seu nome fica muito bonito todo em maiúsculas? Olha -> ${nome.toUpperCase()} </br>`)
         document.write(`O interessante é que ele também fica bonito só em minúsculas, ò só -> ${nome.toLowerCase()}`)
+        document.close()
     </script>
+</head>
+<body>
+    <h1>Teste dos testes</h1>
+
 </body>
 </html>
