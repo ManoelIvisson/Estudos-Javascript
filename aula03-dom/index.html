@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="roxo">Introdução ao DOM</h1>
+    <p class="rosa">Aqui vai o resultado</p>
+    <p id="msg">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="rosa">Clique em mim</div>
+
+    <script>
+        var paragrafo = window.document.getElementsByTagName('p')[1]
+        paragrafo.style.color = 'red'
+        window.document.write('Está escrito: ' + paragrafo.innerHTML + '</br>')
+        
+        var mensagem = window.document.getElementById('msg')
+        window.document.write(`Repetindo a mesma mensagem: ${mensagem.innerHTML}`)
+
+        var rosados = window.document.getElementsByClassName('rosa')[0]
+        rosados.style.color = '#ff00ff'
+        
+
+        var roxos = window.document.querySelector('.rosa')
+        roxos.style.color = 'darkred'
+    </script>
+</body>
+</html>
