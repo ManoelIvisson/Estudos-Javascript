@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font: normal 1em Arial;
+        }
+
+        input {
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    
+    <fieldset>
+        <legend>Calcular soma</legend>
+
+        <label for="numero1">Primeiro número</label>
+        <input type="number" name="numero1" id="numero1">
+
+        <label for="numero2">Segundo número</label>
+        <input type="number" name="numero2" id="numero2">
+
+        <input type="button" value="Somar" onclick="somar(Number(numero1.value), Number(numero2.value))">
+
+        <p id="resultado">O resultado entre a soma de </p>
+    </fieldset>
+
+    <script>
+        let resultado = window.document.getElementById('resultado')
+
+        function somar(n1, n2){
+            resultado.innerText = `O resultado entre a soma de ${n1} + ${n2} é <strong>${n1 + n2}<netflix:/`
+        }
+    </script>
+</body>
+</html>
