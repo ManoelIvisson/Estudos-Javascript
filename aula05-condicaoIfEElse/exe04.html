@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Brasileiro</h1>
+
+    <fieldset>
+        <legend>Nacionalidade</legend>
+
+        <label for="pais">País</label>
+        <input type="text" name="pais" id="pais">
+
+        <input type="button" value="Verificar" onclick="nacionalidade()">
+
+        <div id="resposta">
+
+        </div>
+    </fieldset>
+
+    <script>
+        function nacionalidade(){
+            var pais = window.document.querySelector('input#pais').value
+            var resposta = window.document.getElementById('resposta')
+
+            if (pais == 'Brasil') {
+                resposta.innerHTML = '<p>Você é brasileiro &#x1F1E7&#x1F1f7</p>'
+            } else {
+                resposta.innerHTML = '<p>Você é estrangeiro</p>'
+            }
+        }
+    </script>
+</body>
+</html>
