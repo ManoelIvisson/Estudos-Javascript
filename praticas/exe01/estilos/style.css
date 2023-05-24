@@ -9,6 +9,7 @@ body {
     font: normal 1em Arial;
     background-color: rgb(37, 37, 179);
     text-align: center;
+    height: 100vh;
 }
 
 main {
@@ -31,7 +32,6 @@ p {
 img {
     display: block;
     width: 300px;
-    border-radius: 50%;
     margin: auto;
     padding: 0px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -39,5 +39,4 @@ img {
 
 .fora {
     color: white;
-    background-image: linear-gradient();
 }
