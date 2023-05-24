@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: normal 1em Arial;
+    background-color: rgb(37, 37, 179);
+    text-align: center;
+}
+
+main {
+    width: 700px;
+    height: 350px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    padding: 10px;
+}
+
+p {
+    padding: 20px;
+}
+
+img {
+    display: block;
+    width: 300px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fora {
+    color: white;
+    background-image: linear-gradient();
+}
