@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="fora">Verificador de idade</h1>
+    </header>
+
+    <main>
+        <div id="formulario">
+            <div>
+                <label for="ano">Ano de nascimento: </label>
+                <input type="number" name="ano" id="ano" required min="1800" max="2023">
+            </div>
+
+            <div>
+                <label for="sexo">Sexo: </label>
+                <input type="radio" name="sexo" id="feminino" value="fem">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="masculino" value="masc">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <input type="button" value="Verificar">
+
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
+
+        <div id="imagem">
+            
+        </div>
+    </main>
+
+    <footer>
+        <p class="fora">@Todos os direitos reservados ao canal Curso em Vídeo! Valeu!!!</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
