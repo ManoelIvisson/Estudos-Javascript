@@ -24,12 +24,12 @@ main {
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#valores {
+div {
     padding: 10px;
-}
+} 
 
-#valores div {
-    padding-bottom: 10px;
+input[type= text] {
+    height: 100px;
 }
 
 p {
