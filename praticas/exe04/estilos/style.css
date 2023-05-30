@@ -32,6 +32,10 @@ input[type= text] {
     height: 100px;
 }
 
+input[type= button] {
+    padding: 3px;
+}
+
 p {
     padding: 10px;
 }
