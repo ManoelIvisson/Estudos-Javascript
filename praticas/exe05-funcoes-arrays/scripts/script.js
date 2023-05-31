@@ -24,27 +24,36 @@ function adicionarNumero() {
 //Função que analisará os números contidos no vetor: numeros
 function analisarNumeros() {    
     analise.innerHTML = ''
-    numeros = numeros.sort()
-    alert(numeros.sort())
+    numeros = numeros.sort(compararNumeros)
+    let soma = 0
 
     if (numeros.length > 0) {
-        let quantidade = document.createElement('p') // adiciona um paragrafo para mostrar a quantiadde de elementos
-        quantidade.innerHTML = `Ao todo, temos ${numeros.length} números adicionados.`
-        analise.appendChild(quantidade)
+        // adiciona um paragrafo para mostrar a quantiadde de elementos
+        analise.innerHTML += `<p>Ao todo, temos ${numeros.length} números adicionados.</p>`
 
-        let maior = document.createElement('p') // adciona um paragrafo para mostrar o maior número
-        maior.innerHTML = `O maior valor informado foi o ${numeros[numeros.length - 1]}`
-        analise.appendChild(maior)
+        // adciona um paragrafo para mostrar o maior número
+        analise.innerHTML += `<p>O maior valor informado foi o ${numeros[numeros.length - 1]}.</p>`
+
+        //adiciona um paragrafo para mostrar o mnenor número
+        analise.innerHTML += `<p>O menor valor informado foi o ${numeros[0]}.</p>`
+
+        for (c = 0; c < numeros.length; c++) {
+            soma += numeros[c]
+        }
         
+        let media = soma/numeros.length
+
+        //adiciona um parágrafo para mostrar a soma dos valores
+        analise.innerHTML += `<p>A soma de todos os valores é ${soma}.</p>`
+
+        //adiciona um parágrafo para mostrar a média dos valores
+        analise.innerHTML += `<p>A média entre todos os valores é ${media}.</p>`
+
     } else {
         alert('Por favor, adicione pelo menos um número na lista')
     }
 }
 
-let num = [5,8,4, 2, 9, 3]
-
-console.log(num.sort())
-
-numeros = [5,8,4, 2, 9, 3]
-
-console.log(numeros.sort())
+function compararNumeros(a, b) {
+    return a - b
+}
