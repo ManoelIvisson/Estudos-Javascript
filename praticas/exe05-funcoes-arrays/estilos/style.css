@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: normal 1em Arial;
+    background-color: rgb(37, 37, 179);
+    height: 100vh;
+}
+
+h1 {
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.555);
+}
+
+main {
+    width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+div {
+    padding: 10px;
+} 
+
+input[type= text] {
+    height: 100px;
+}
+
+input[type= button] {
+    padding: 3px;
+    margin: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+#valores p {
+    text-align: center;
+}
+
+p.fora {
+    padding: 20px;
+}
+
+.fora {
+    color: white;
+    text-align: center;
+}
