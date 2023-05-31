@@ -1,7 +1,7 @@
 let num = [5,8,4, 2, 9, 3]
 
 num.push(1)
-num.sort()
+console.log(num.sort())
 
 console.log(`O vetor tem ${num.length} elementos`)
 console.log(`O primeiro valor do vetor é ${num[0]}`)
