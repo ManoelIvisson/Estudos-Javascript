@@ -37,6 +37,10 @@ input[type= button] {
     margin: 10px;
 }
 
+select {
+    min-width: 210px;
+}
+
 p {
     padding: 10px;
 }

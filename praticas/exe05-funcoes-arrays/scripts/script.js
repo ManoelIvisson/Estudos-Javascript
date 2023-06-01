@@ -8,8 +8,8 @@ function adicionarNumero() {
     let numero = document.getElementById('num')
     let num = Number(numero.value)
     let lista = document.querySelector('div#listagem > select')
-    
-    if (numero.length == 0 || numeros.indexOf(num) != -1 || (num < 0 || num > 100)) {
+
+    if (numero.value == '' || numeros.indexOf(num) != -1 || (num < 0 || num > 100)) {
         alert('Valor não informado ou já adicionado a lista')
     } else {
         numeros.push(Number(num)) //adiciona o número do input no array numeros
@@ -19,29 +19,34 @@ function adicionarNumero() {
 
         lista.appendChild(item) //apresenta visualmente que o número foi adicionado no <select>
     }
+
+    numero.value = ''
+    numero.focus()
 }
 
 //Função que analisará os números contidos no vetor: numeros
 function analisarNumeros() {    
     analise.innerHTML = ''
-    numeros = numeros.sort(compararNumeros)
+    numeros = numeros.sort(compararNumeros) // Coloca o array em ordem crescente
     let soma = 0
+    let media = 0
+    let total = numeros.length
 
-    if (numeros.length > 0) {
+    if (total > 0) {
         // adiciona um paragrafo para mostrar a quantiadde de elementos
-        analise.innerHTML += `<p>Ao todo, temos ${numeros.length} números adicionados.</p>`
+        analise.innerHTML += `<p>Ao todo, temos ${total} números adicionados.</p>`
 
         // adciona um paragrafo para mostrar o maior número
-        analise.innerHTML += `<p>O maior valor informado foi o ${numeros[numeros.length - 1]}.</p>`
+        analise.innerHTML += `<p>O maior valor informado foi o ${numeros[total - 1]}.</p>`
 
         //adiciona um paragrafo para mostrar o mnenor número
         analise.innerHTML += `<p>O menor valor informado foi o ${numeros[0]}.</p>`
 
-        for (c = 0; c < numeros.length; c++) {
-            soma += numeros[c]
+        for (let pos in numeros) {
+            soma += numeros[pos]
         }
         
-        let media = soma/numeros.length
+        media = soma/total
 
         //adiciona um parágrafo para mostrar a soma dos valores
         analise.innerHTML += `<p>A soma de todos os valores é ${soma}.</p>`
